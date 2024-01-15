@@ -40,3 +40,7 @@ A ajouter dans fichier.js:
 onload = alert(" bienvenu sur ma page");
 
 Exercice 4
+<a href="#" onclick='document.querySelectorAll("p").style.backgroundColor="blue";'>Changer de couleur</a>
+
+Exercice 5
+
