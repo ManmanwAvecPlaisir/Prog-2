@@ -1,0 +1,42 @@
+PROGRAMMATION WEB 2
+TP 1
+
+Exercice 1
+Une erreur s'affiche "Uncaught TypeError: Cannot read properties of null (reading 'setAttribute') at VM209 fichier.js:2:15"
+
+Cela est du à la définition prématurée d'un attribut d'un élément qui n'a pas encore été chargé sur la page
+
+HTML corrigé : 
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+ FlexBox
+</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="fichier.css" media="screen" />
+</head>
+<body>
+<div id="conteneur">
+<div style="background-color:red">element 1</div>
+<div style="background-color:yellow">element 2</div>
+<div style="background-color:green">element 3</div>
+</div>
+<a href="#"
+onclick='document.querySelector("#conteneur").style.backgroundColor="orange";'>...</a>
+</body>
+<script src="fichier.js"></script>
+</html>
+
+Exercice 2
+A rajouter à l'intérieur du body:
+enseignement L2 <span>MI</span>
+
+A rajouter dans fichier.js:
+document.body.querySelector("span").innerHTML=" Mathématique et Informatique";
+
+Exercice 3
+A ajouter dans fichier.js:
+onload = alert(" bienvenu sur ma page");
+
+Exercice 4
